@@ -41,10 +41,10 @@ myCards.forEach(card => {
 })
 
 // starting music & timer after the first click on the screen
-let coundDown = setInterval(() => {
+let countDown = setInterval(() => {
     backGroundMusic.play();
     if (currentTimer <= 30) timer.style.color = "red";
-    if (currentTimer === 0) clearInterval(coundDown);
+    if (currentTimer === 0) clearInterval(countDown);
     timer.innerText = `Timer: ${currentTimer--}`;
 }, 1000)
 
@@ -97,10 +97,10 @@ myCards.forEach(card => {
 
             // Checking if the game is over 
             let matchedCard = document.querySelectorAll(".card.matched");
-            if (matchedCard.length === arrLength.length) {
+            if (matchedCard.length === myCards.length) {
                 gameOver = true;
                 clearInterval(countDown);
-                alert("Congrats, Your score is" + currentScore);
+                alert("Congrats, Your score is" +" "+ currentScore);
                 const restartGame = confirm("Do you wanna play again ?");
                 if (restartGame) location.reload();
             }
