@@ -7,13 +7,13 @@
 }
 
 body {
-    width: 350px;
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     margin: auto;
+    width: 100vw;
+    height: 100vh;
     text-align: center;
     background-color: rgba(19, 12, 12, 0.301);
     font-family: "Momo Signature", cursive;
@@ -29,8 +29,12 @@ body {
 }
 
 .container {
-    width: 450px;
-    background-color: #ddd;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 75%;
+    height: 75%;
+    background-color: #0000009c;
     padding: 20px;
     border-radius: 8px;
 }
@@ -44,19 +48,24 @@ body {
 
 .stats h1 {
     font-size: 24px;
+    color: #ffffffd6;
+    margin-left: 16px;
+    margin-right: 16px;
 }
 
 .to-type {
     font-size: 24px;
     margin-bottom: 15px;
-    margin-left: calc(15px + 1px);
+    margin-left: 16px;
     text-align: left;
+    color: #ffffffd6;
+    line-height: 2.5;
 }
 
 textarea {
     resize: none;
     width: 100%;
-    height: 150px;
+    height: 250px;
     outline: none;
     border: none;
     border-radius: 8px;
