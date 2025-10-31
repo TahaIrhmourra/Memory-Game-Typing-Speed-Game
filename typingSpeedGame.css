@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Momo+Signature&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 350px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+    background-color: rgba(19, 12, 12, 0.301);
+    font-family: "Momo Signature", cursive;
+}
+
+.correct {
+    color: green;
+}
+
+.incorrect {
+    color: red;
+    text-decoration: line-through;
+}
+
+.container {
+    width: 450px;
+    background-color: #ddd;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.stats h1 {
+    font-size: 24px;
+}
+
+.to-type {
+    font-size: 24px;
+    margin-bottom: 15px;
+    margin-left: calc(15px + 1px);
+    text-align: left;
+}
+
+textarea {
+    resize: none;
+    width: 100%;
+    height: 150px;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 15px;
+    font-size: 24px;
+    font-family: "Momo Signature", cursive;
+}
