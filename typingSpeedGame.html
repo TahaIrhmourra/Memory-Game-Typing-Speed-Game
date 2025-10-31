@@ -10,10 +10,18 @@
     <div class="container">
         <div class="stats">
             <h1 id="timer"></h1>
-            <h1 id="score"></h1>
+            <h1 id="wpm"></h1>
         </div>
         <div class="to-type"></div>
         <textarea name="text-input" id="text-input" placeholder="The time will start after typing one letter" autofocus></textarea>
+    </div>
+
+    <div class="pop-up hidden">
+        <h1>Time is up</h1>
+        <h2 id="final-wpm">Your WPM score is: </h2>
+        <div class="choice">
+            <button id="choice-btn">Want to play again ?</button>
+        </div>
     </div>
 
     <!-- Bg music -->
