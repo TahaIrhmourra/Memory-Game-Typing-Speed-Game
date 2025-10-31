@@ -2,12 +2,13 @@ const theTimer = document.querySelector("#timer");
 const theScore = document.querySelector("#score");
 const toTypeInput = document.querySelector(".to-type");
 const typingArea = document.querySelector("#text-input");
+const backGroundMusic = document.querySelector("#gbm");
 
-let timer = 60;
+let timer = 9999;
 let score = 0;
 
 theTimer.innerText = `timer: ${timer}`;
-theScore.innerText = `score: ${score}`;
+theScore.innerText = `WPM: ${score}`;
 
 
 let sentencesArr = [
@@ -22,11 +23,12 @@ let randomNumber = Math.floor(Math.random() * sentencesArr.length);
 let toTypeInputSpan = sentencesArr[randomNumber];
 toTypeInputSpan.split("").forEach(char => {
     let spanElement = document.createElement("span");
-    spanElement.innerText = char;
+    spanElement.textContent = char;
     toTypeInput.appendChild(spanElement);
 })
 
 typingArea.addEventListener("input", function startCounter() {
+    // backGroundMusic.play();
     let counter = setInterval(() => {
         timer--;
         theTimer.innerText = `timer: ${timer}`;
@@ -49,7 +51,7 @@ typingArea.addEventListener("input", () => {
         if (!character) {
             charSpan.classList.remove("incorrect");
             charSpan.classList.remove("correct");
-        } else if (character === charSpan.innerText) {
+        } else if (character === charSpan.textContent) {
             charSpan.classList.add("correct");
             charSpan.classList.remove("incorrect");
         } else {
@@ -59,4 +61,6 @@ typingArea.addEventListener("input", () => {
     })
 })
 
-hello
+function wpmCalc(fulldata, time) {
+
+}
