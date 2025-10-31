@@ -44,7 +44,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
 }
 
 .stats h1 {
@@ -85,5 +85,40 @@ textarea {
     background: transparent;
     border: 1px solid #ddd;
     color: #ddd;
-    caret-color: transparent;
+    /* caret-color: transparent; */
 }
+
+.pop-up {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 45px;
+    width: 400px;
+    height: 350px;
+    background-color: #1a1919;
+    padding: 25px;
+    color: #bbb;
+}
+
+#choice-btn {
+    background-color: transparent;
+    border: 1px solid #ddd;
+    color: #bbb;
+    padding: 10px 15px;
+    border-radius: 20px;
+    transition: .3s;
+    cursor: pointer;
+}
+
+#choice-btn:hover {
+    background-color: green;
+    transform: scale(1.1);
+}
+
+.hidden {
+    display: none;
+}
+
+
